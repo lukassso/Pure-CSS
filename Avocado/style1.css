@@ -1,0 +1,36 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  html, body {
+   min-height: 100vh;
+   display: grid;
+   }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background: #ffddbf;
+  }
+  .container {
+    margin: auto;
+    width: 14.5rem;
+    height: 18rem;
+  }
+  .fruit {
+    position: absolute;
+  }
+  .fruit.shape {
+    left: 0.5rem;
+    width: 14rem;
+    height: 18rem;
+    background: #faf691;
+    border-top: 0.3rem solid;
+  border-left: 0.3rem solid;
+  border-right: 0.9rem solid;
+  border-bottom: 1.3rem solid;
+  border-color: #60653f;
+  border-radius: 50% / 60% 60% 40% 40%;
+  }
