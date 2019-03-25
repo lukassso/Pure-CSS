@@ -12,7 +12,7 @@
     flex: 1;
     align-items: center;
     justify-content: center;
-    background: #ffddbf;
+    background: #eec8a7;
   }
   .container {
     margin: auto;
@@ -33,4 +33,27 @@
   border-bottom: 1.3rem solid;
   border-color: #60653f;
   border-radius: 50% / 60% 60% 40% 40%;
+  box-shadow: inset 0 0.02rem 1rem 1rem #c5e07b;;
+  transform: rotate(10deg);
   }
+.pit {
+  position: absolute;
+  content: '';
+  top: 7rem;
+  left: 3.5rem;
+  width: 6rem;
+  height: 7rem;
+  background: #60653f;
+  border-radius: 100%;
+  box-shadow: inset -0.5rem -0.5rem 1.25rem rgba(255, 195, 72, 0.8);
+}
+.pit.shadow {
+  position: absolute;
+  z-index: -1;
+  top: 0.25rem;
+  left: 0.25rem;
+  width: 6rem;
+  height: 7rem;
+  background: #453e1b;
+  filter: blur(0.15rem);
+}
