@@ -4,11 +4,11 @@ var browserSync = require('browser-sync').create();
 gulp.task('browserSync', function () {
   browserSync.init({
     server: {
-    baseDir: './Avocado'
+    baseDir: './Sapphire'
     },
   })
 });
 gulp.task('watch', ['browserSync'], () => {
-    gulp.watch('Avocado/*.html', browserSync.reload);
-    gulp.watch('Avocado/*.css', browserSync.reload);
+    gulp.watch('Sapphire/*.html', browserSync.reload);
+    gulp.watch('Sapphire/*.css', browserSync.reload);
   });
