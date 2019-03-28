@@ -1,0 +1,189 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+.container {
+  margin: auto;
+  width: 18rem;
+  height: 18rem;
+}
+.circle {
+  position: absolute;
+  z-index: 0;
+  width: 18rem;
+  height: 18rem;
+  background: #c2f0ca;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.zebra {
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+}
+.zebra.head {
+  z-index: 1;
+  top: 2rem;
+  left: 1.5rem;
+  width: 9.5rem;
+  height:12rem;
+  background: #f6eeee;
+  border-radius: 100% 50%;
+  overflow: hidden;
+  
+}
+.eye {
+ position: absolute;
+ top: 4rem;
+ left:4rem;
+ width: 1.5rem;
+ height: 1.5rem;
+ background: #272727;
+ border-radius: 100%;
+}
+.eye:after {
+  position: absolute;
+  content: '';
+  top: 0.25rem;
+  left: 0.75rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: #fff;
+  border-radius: inherit;
+}
+.mouth {
+  position: absolute;
+  top: 7rem;
+  left: -1rem;
+  width: 8rem;
+  height: 8rem;
+  background: #4d4a4a;
+  border-radius: 100%;
+}
+.mouth:before {
+  position: absolute;
+  content: '';
+  top: 1.8rem;
+  left: 6.5rem;
+  width: 3rem;
+  height:3rem;
+  background: #4d4a4a;
+  border-radius: inherit;
+}
+.mouth:after {
+  position: absolute;
+  content: '';
+  top: 1rem;
+  left: 3rem;
+  width: 0.5rem;
+  height: 1.5rem;
+  border-radius: 100% 50%;
+  background: #272727;
+  transform: rotate(15deg);
+}
+.stripe {
+  position: absolute;
+  width: 1rem;
+  height: 4rem;
+  border: 0.5rem solid #4d4a4a;
+  border-radius: 50% 30%;
+}
+.zebra.head .stripe:nth-child(1) {
+  top: 4.5rem;
+  left: 9rem;
+  transform: rotate(-50deg)scaleX(-1);
+}
+.zebra.head .stripe:nth-child(2) {
+  top: 2rem;
+  left: 0.2rem;
+  transform: rotate(130deg)scaleX(-1);
+}
+.zebra.head .stripe:nth-child(3) {
+  top: 0;
+  left: 1rem;
+  transform: rotate(130deg)scaleX(-1);
+}
+.zebra.head .stripe:nth-child(4) {
+  top: 4.5rem;
+  left: 9rem;
+  transform: rotate(-50deg)scaleX(-1);
+}
+
+.zebra.neck {
+  position: absolute;
+  top: 7rem;
+  left: 6rem;
+  width: 14rem;
+  height: 10rem;
+  background: #f6eeee;
+  border-radius: 0% 100% 50% 100%;
+  transform: rotate(43deg);
+  overflow: hidden;
+}
+
+.zebra.neck .stripe:nth-child(1) {
+  top:5.5rem;
+  left: 4rem;
+  height: 8rem;
+  transform: rotate(20deg);
+}
+
+.zebra.neck .stripe:nth-child(2) {
+  top: -2rem;
+  left: 3rem;
+  -webkit-transform: rotate(20deg) scaleX(-1);
+  -ms-transform: rotate(20deg) scaleX(-1);
+  transform: rotate(20deg) scaleX(-1);
+}
+
+.zebra.neck .stripe:nth-child(3) {
+  top: -1rem;
+  left: 5.25rem;
+  height: 6rem;
+  -webkit-transform: rotate(25deg) scaleX(-1);
+  -ms-transform: rotate(25deg) scaleX(-1);
+  transform: rotate(25deg) scaleX(-1);
+}
+
+.zebra.neck .stripe:nth-child(4) {
+  top: 2rem;
+  left: 7.5rem;
+  height: 10rem;
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.zebra.mane {
+  z-index: -1;
+  top: 0;
+  left: 6rem;
+  width: 12rem;
+  height: 16rem;
+  background: #4d4a4a;
+  border-radius: 5% 75%;
+}
+.zebra.ear {
+  position: absolute;
+  top: 1.5rem;
+  left: 9rem;
+  width: 3rem;
+  height: 3rem;
+  background: #ffb4a6;
+  border: 0.75rem solid #f6eeee;
+  border-radius: 80% 0% 50% 45%;
+  transform: rotate(-10deg);
+}

@@ -4,11 +4,11 @@ var browserSync = require('browser-sync').create();
 gulp.task('browserSync', function () {
   browserSync.init({
     server: {
-    baseDir: './Storm'
+    baseDir: './Zebra'
     },
   })
 });
 gulp.task('watch', ['browserSync'], () => {
-    gulp.watch('Storm/*.html', browserSync.reload);
-    gulp.watch('Storm/*.css', browserSync.reload);
+    gulp.watch('Zebra/*.html', browserSync.reload);
+    gulp.watch('Zebra/*.css', browserSync.reload);
   });
