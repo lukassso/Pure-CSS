@@ -1,6 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <svg width="240" height="240" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+<svg width="240" height="240" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <ellipse id="ellipseClip" cx="175" cy="175" rx="170" ry="170" fill="url(#planetGradient)" stroke="#1a79b8" stroke-width="2" />
     <clipPath id="clipPath"><use xlink:href="#ellipseClip" overflow="visible" /></clipPath>
