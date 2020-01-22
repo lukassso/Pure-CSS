@@ -1,0 +1,67 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: red;
+  overflow: hidden;
+}
+.site-nav {
+  height: 20px;
+  width: 100%;
+  background: yellow;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.site-menu-trigger {
+  border: 0;
+  border-radius: 5;
+  background: white;
+}
+.site-menu {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  height: 100%;
+  width: 300px;
+  background: green;
+  transform: translateX(100%);
+  transition: 0.4s transform ease-in-out;
+}
+.site-menu ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.site-menu li {
+  background: white;
+  margin-top: 20px;
+  color: grey;
+  border-radius: 5px;
+  flex-basis: 100%;
+  height: 50px;
+}
+.site-menu a {
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.site-menu a:hover {
+  background: red;
+  color: white;
+}
+
+.site-menu-trigger:focus ~ .site-menu, .site-menu:hover {
+  transform: translateX(0);
+}
